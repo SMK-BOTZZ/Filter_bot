@@ -15,9 +15,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '26896271'))
+API_HASH = environ.get('API_HASH', 'cd8ed4668e2fb469fc9bacd50fbba592')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7047568095:AAFAd_v1PwsCDwaFWn0ZnK9-3V930RN3Qjw")
 
 #rename
 FLOOD = int(environ.get("FLOOD", "10"))
@@ -37,32 +37,32 @@ SP = (environ.get('SP', '')).split()
 
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('5431311680', '6118927515').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('-1001932781121', '0').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('6551906246', '0').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('-1001991774347', '0').split()]
 
 
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('5431311680', '6118927515').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('6551906246', '0').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('-1001572271892')
-auth_grp = environ.get('-1001764492892')
-AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(-1001572271892) else None
+auth_channel = environ.get('-1002011472243')
+auth_grp = environ.get('-1002011472243')
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(-1002011472243) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('-1001566837125')
-reqst_channel = environ.get('-1001905367057')
+support_chat_id = environ.get('-1002011472243')
+reqst_channel = environ.get('-1002011472243')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
-login_channel = environ.get('-1001868871195')
+login_channel = environ.get('-1002011472243')
 LOGIN_CHANNEL = int(login_channel) if login_channel and id_pattern.search(login_channel) else None
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://newboiz95:vXUrlRcBtvEMALQJ@cluster0.8rxbhdm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Custom Chats
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1001905367057'))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 'https://t.me/+kdCUBx0zDT02ZDBl')
+FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1002082802109'))
+FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', '')
 
 # This is required for the plugins involving the file system.
 TMP_DOWNLOAD_DIRECTORY = environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
@@ -92,7 +92,7 @@ GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+8vZTQtzo0lBmNDY9')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+e_UqPGvuQ5E5NGU1')
 MSG_ALRT = environ.get('MSG_ALRT', 'Piracy Is Crime')
 NOR_ALRT =  environ.get('NOR_ALRT', 'NO IMAGES IS FOUND')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002010995228'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Nothing_Support_Group')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
